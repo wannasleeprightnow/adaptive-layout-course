@@ -32,24 +32,22 @@ a {
   text-decoration: none;
 }
 
-
 .button_light-sm {
   font-family: "Inter", serif;
   font-weight: 500;
-  background: #F5F7FA;
+  background: #f5f7fa;
   padding: 10px 20px;
   border-radius: 6px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
-  color: #4CAF4F;
+  color: #4caf4f;
 }
-
 
 .button_primary-sm {
   font-family: "Inter", serif;
   font-weight: 500;
-  background: #4CAF4F;
+  background: #4caf4f;
   padding: 10px 20px;
   border-radius: 6px;
   font-size: 14px;
@@ -61,7 +59,7 @@ a {
 .button_primary-xl {
   font-family: "Inter", serif;
   font-weight: 500;
-  background: #4CAF4F;
+  background: #4caf4f;
   padding: 14px 32px;
   border-radius: 6px;
   font-size: 16px;

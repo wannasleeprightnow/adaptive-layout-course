@@ -1,5 +1,5 @@
 .promo {
-  background: #F5F7FA;
+  background: #f5f7fa;
   padding: 96px 0;
 }
 
@@ -12,12 +12,12 @@
   font-size: 64px;
   line-height: 76px;
   font-weight: 800;
-  color: #4D4D4D;
+  color: #4d4d4d;
   margin-bottom: 16px;
 }
 
 .promo__group h1 span {
-  color: #4CAF4F;
+  color: #4caf4f;
 }
 
 .promo__group p {
