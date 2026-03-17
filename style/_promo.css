@@ -9,18 +9,6 @@
   gap: 104px;
 }
 
-.promo__group h1 {
-  font-size: 64px;
-  line-height: 76px;
-  font-weight: 600;
-  color: #4d4d4d;
-  margin-bottom: 16px;
-}
-
-.promo__group h1 span {
-  color: #4caf4f;
-}
-
 .promo__group p {
   margin-bottom: 32px;
 }

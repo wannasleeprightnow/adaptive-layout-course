@@ -4,23 +4,18 @@
 
 .manage h2 {
   text-align: center;
-  font-size: 36px;
-  line-height: 44px;
-  font-weight: 600;
-  color: #4d4d4d;
-  margin-bottom: 8px;
 }
 
 .manage__subtitle {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 37px;
 }
 
 .manage__cards {
   display: flex;
   align-items: center;
-   justify-content: center;
-   gap: 24px;
+  justify-content: center;
+  gap: 24px;
 }
 
 .manage__card {
@@ -32,24 +27,29 @@
   align-items: center;
   gap: 12px;
   text-align: center;
-  
+
   h4 {
     font-size: 20px;
     line-height: 28px;
     font-weight: 600;
-    color: #4D4D4D;
+    color: #4d4d4d;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
 .manage__card-icon {
   position: relative;
-  background: #E8F6E9;
+  background: #e8f6e9;
   border-radius: 10px 5px 18px 15px;
   width: 50px;
   height: 50px;
   img {
     position: absolute;
-    right: 17px;
+    right: 18xpx;
     bottom: 8px;
   }
 }
