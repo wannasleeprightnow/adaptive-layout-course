@@ -40,6 +40,16 @@ h2 {
   color: #4d4d4d;
   margin-bottom: 8px;
   letter-spacing: 1px;
+
+  span {
+    color: #4caf4f;
+  }
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 1px;
 }
 
 ul {
