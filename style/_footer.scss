@@ -1,5 +1,5 @@
 .footer {
-  background-color: #263238;
+  background-color: $secondary;
   padding: 60px 0 20px;
 }
 
@@ -41,7 +41,7 @@
   overflow: hidden;
   width: 291px;
   border-radius: 8px;
-  background-color: #3b464c;
+  background-color: $light-secondary;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -84,7 +84,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #3b464c;
+    background-color: $light-secondary;
     border-radius: 50%;
   }
 

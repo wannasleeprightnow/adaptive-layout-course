@@ -1,7 +1,7 @@
 .achievements {
   padding: 60px 0;
   margin: 50px 0;
-  background-color: #f5f7fa;
+  background-color: $light;
 }
 
 .achievements__content {
@@ -12,7 +12,7 @@
 
 .achievements__content-header {
   p {
-    color: #18191f;
+    color: $dark;
   }
 }
 

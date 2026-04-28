@@ -12,24 +12,40 @@ body {
   font-weight: 400;
   font-style: normal;
   line-height: 24px;
-  color: #717171;
+  color: $base-color  ;
 }
 
 .container {
-  width: 1152px;
+  max-width: 1152px;
   margin: 0 auto;
+
+  @media (max-width: $breakpoint-xl) {
+    max-width: $container-lg;
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    max-width: $container-md;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    max-width: $container-sm;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    max-width: 100%;
+  }
 }
 
 h1 {
   font-size: 64px;
   line-height: 76px;
   font-weight: 600;
-  color: #4d4d4d;
+  color: $gray;
   margin-bottom: 16px;
   letter-spacing: 2px;
 
   span {
-    color: #4caf4f;
+    color: $primary;
   }
 }
 
@@ -37,12 +53,12 @@ h2 {
   font-size: 36px;
   line-height: 44px;
   font-weight: 600;
-  color: #4d4d4d;
+  color: $gray;
   margin-bottom: 8px;
   letter-spacing: 1px;
 
   span {
-    color: #4caf4f;
+    color: $primary;
   }
 }
 
@@ -50,11 +66,13 @@ h3 {
   font-size: 28px;
   line-height: 36px;
   letter-spacing: 1px;
+  color: $gray;
 }
 
 h4 {
   font-size: 20px;
   line-height: 28px;
+  color: $gray
 }
 
 ul {
@@ -67,7 +85,7 @@ button {
 }
 
 a {
-  color: black;
+  color: $dark;
   text-decoration: none;
 }
 
@@ -78,19 +96,19 @@ a {
 .button_light-sm {
   font-family: "Inter", serif;
   font-weight: 500;
-  background: #f5f7fa;
+  background: $light;
   padding: 10px 20px;
   border-radius: 6px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
-  color: #4caf4f;
+  color: $primary;
 }
 
 .button_primary-sm {
   font-family: "Inter", serif;
   font-weight: 500;
-  background: #4caf4f;
+  background: $primary;
   padding: 10px 20px;
   border-radius: 6px;
   font-size: 14px;
@@ -102,7 +120,7 @@ a {
 .button_primary-xl {
   font-family: "Inter", serif;
   font-weight: 500;
-  background: #4caf4f;
+  background: $primary;
   padding: 14px 32px;
   border-radius: 6px;
   font-size: 16px;
