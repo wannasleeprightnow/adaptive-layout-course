@@ -38,7 +38,7 @@ body {
 
 h1 {
   font-size: 64px;
-  line-height: 76px;
+  line-height: 119%;
   font-weight: 600;
   color: $gray;
   margin-bottom: 16px;
@@ -47,11 +47,20 @@ h1 {
   span {
     color: $primary;
   }
+
+  @media (max-width: $breakpoint-lg) {
+    font-size: 48px;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 32px;
+    letter-spacing: 0;
+  }
 }
 
 h2 {
   font-size: 36px;
-  line-height: 44px;
+  line-height: 122%;
   font-weight: 600;
   color: $gray;
   margin-bottom: 8px;
@@ -60,19 +69,32 @@ h2 {
   span {
     color: $primary;
   }
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 28px;
+    letter-spacing: 0;
+  }
 }
 
 h3 {
   font-size: 28px;
-  line-height: 36px;
+  line-height: 128%;
   letter-spacing: 1px;
   color: $gray;
+
+  @media (max-width: $breakpoint-md) {
+    letter-spacing: 0;
+  }
 }
 
 h4 {
   font-size: 20px;
-  line-height: 28px;
-  color: $gray
+  line-height: 140%;
+  color: $gray;
+
+  @media (max-width: $breakpoint-md) {
+    letter-spacing: 0;
+  }
 }
 
 ul {
@@ -89,10 +111,6 @@ a {
   text-decoration: none;
 }
 
-.text-right {
-  text-align: right;
-}
-
 .button_light-sm {
   font-family: "Inter", serif;
   font-weight: 500;
@@ -100,7 +118,7 @@ a {
   padding: 10px 20px;
   border-radius: 6px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 143%;
   font-weight: 500;
   color: $primary;
 }
@@ -112,7 +130,7 @@ a {
   padding: 10px 20px;
   border-radius: 6px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 150%;
   font-weight: 400;
   color: white;
 }

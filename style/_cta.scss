@@ -4,6 +4,10 @@
   margin-top: 50px;
   text-align: center;
 
+  @media (max-width: $breakpoint-md) {
+    margin-top: 40px;
+  }
+
   h2 {
     margin-bottom: 32px;
   }

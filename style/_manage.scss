@@ -1,5 +1,9 @@
 .manage {
   padding: 50px 0;
+
+  @media (max-width: $breakpoint-md) {
+    padding: 40px 0;
+  }
 }
 
 .manage h2 {
@@ -13,9 +17,19 @@
 
 .manage__cards {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 24px;
+
+  @media (max-width: $breakpoint-lg) {
+    gap: 12px;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    gap: 16px
+  }
 }
 
 .manage__card {
@@ -36,6 +50,18 @@
   p {
     font-size: 14px;
     line-height: 20px;
+  }
+
+  @media (max-width: $breakpoint-xl) {
+    justify-content: space-around;
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    padding: 16px;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    padding: 28px;
   }
 }
 

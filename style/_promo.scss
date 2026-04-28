@@ -1,14 +1,40 @@
 .promo {
   background: $light;
   padding: 96px 0;
+
+  @media (max-width: $breakpoint-md) {
+    padding: 60px 0;
+  }
 }
 
 .promo__content {
   display: flex;
   align-items: center;
   gap: 104px;
+
+  @media (max-width: $breakpoint-lg) {
+    gap: 40px;
+
+    img {
+      width: 280px;
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column-reverse;
+    
+  }
 }
 
-.promo__group p {
-  margin-bottom: 32px;
+.promo__group  {
+
+  p {
+    margin-bottom: 32px;
+  }
+
+  button {
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+    }
+  }
 }

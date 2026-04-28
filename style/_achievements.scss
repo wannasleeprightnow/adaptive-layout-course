@@ -2,17 +2,34 @@
   padding: 60px 0;
   margin: 50px 0;
   background-color: $light;
+
+  @media (max-width: $breakpoint-md) {
+    margin: 40px 0;
+  }
 }
 
 .achievements__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: $breakpoint-xl) {
+    gap: 20px;
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .achievements__content-header {
   p {
     color: $dark;
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    text-align: center;
   }
 }
 
@@ -21,6 +38,11 @@
   grid-template-columns: repeat(2, 270px);
   column-gap: 24px;
   row-gap: 40px;
+
+  @media (max-width: $breakpoint-lg) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+  }
 }
 
 .achievements__item {
