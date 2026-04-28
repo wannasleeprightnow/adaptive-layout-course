@@ -1,162 +1,195 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width", initial-scale=1.0" />
-    <title>Nexcent</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" , initial-scale=1.0" />
+  <title>Nexcent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="desktop-navigation">
+        <img src="img/logo.svg" alt="Nexcent" />
+        <ul class="desktop-navigation__list">
+          <li class="desktop-navigation__list-element_active">
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Service</a>
+          </li>
+          <li>
+            <a href="">Feature</a>
+          </li>
+          <li>
+            <a href="">Product</a>
+          </li>
+          <li>
+            <a href="">Testimonial</a>
+          </li>
+          <li>
+            <a href="">FAQ</a>
+          </li>
+        </ul>
+        <div class="desktop-navigation__buttons">
+          <button class="button_light-sm">Login</button>
+          <button class="button_primary-sm">Sign up</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="promo">
       <div class="container">
-        <nav class="desktop-navigation">
-          <img src="img/logo.svg" alt="Nexcent" />
-          <ul class="desktop-navigation__list">
-            <li class="desktop-navigation__list-element_active">
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">Service</a>
-            </li>
-            <li>
-              <a href="">Feature</a>
-            </li>
-            <li>
-              <a href="">Product</a>
-            </li>
-            <li>
-              <a href="">Testimonial</a>
-            </li>
-            <li>
-              <a href="">FAQ</a>
-            </li>
-          </ul>
-          <div class="desktop-navigation__buttons">
-            <button class="button_light-sm">Login</button>
-            <button class="button_primary-sm">Sign up</button>
+        <div class="promo__content">
+          <div class="promo__group">
+            <h1>Lessons and insights <span>from 8 years</span></h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Elementum nisi aliquet <br />
+              volutpat pellentesque volupat est.
+            </p>
+            <button class="button_primary-xl">Register</button>
           </div>
-        </nav>
+          <img src="img/promo-img.svg" alt="" />
+        </div>
       </div>
-    </header>
-    <main>
-      <section class="promo">
-        <div class="container">
-          <div class="promo__content">
-            <div class="promo__group">
-              <h1>Lessons and insights <span>from 8 years</span></h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Elementum nisi aliquet <br />
-                volutpat pellentesque volupat est.
-              </p>
-              <button class="button_primary-xl">Register</button>
+    </section>
+    <section class="clients">
+      <div class="container">
+        <h2>Our Clients</h2>
+        <p>We have been working with some Fortune 500+ clients</p>
+        <div class="clients__logos">
+          <img src="img/clients-logo-1.svg" alt="" />
+          <img src="img/clients-logo-2.svg" alt="" />
+          <img src="img/clients-logo-3.svg" alt="" />
+          <img src="img/clients-logo-4.svg" alt="" />
+          <img src="img/clients-logo-5.svg" alt="" />
+          <img src="img/clients-logo-6.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="manage">
+      <div class="container">
+        <h2>Manage your entire community<br> in a single system</h2>
+        <p class="manage__subtitle">Who is Nextcent suitable for?</p>
+        <div class="manage__cards">
+          <div class="manage__card">
+            <div class="manage__card-icon">
+              <img src="img/manage-1.svg">
             </div>
-            <img src="img/promo-img.svg" alt="" />
+            <h4>Membership Organisations</h4>
+            <p>Our membership management software provides full automation of membership renewals and payments</p>
+          </div>
+          <div class="manage__card">
+            <div class="manage__card-icon">
+              <img src="img/manage-2.svg">
+            </div>
+            <h4>National Associations</h4>
+            <p>Our membership management software provides full automation of membership renewals and payments</p>
+          </div>
+          <div class="manage__card">
+            <div class="manage__card-icon">
+              <img src="img/manage-3.svg">
+            </div>
+            <h4>Clubs & Groups</h4>
+            <p>Our membership management software provides full automation of membership renewals and payments</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="unlock">
+      <div class="container">
+        <div class="unlock__content">
+          <img src="img/unlock.svg" />
+          <div class="unlock__group">
+            <h2>The unseen of spending three years at Pixelgrade</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam
+              vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique
+              iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae,
+              tempus sem. Donec elementum pulvinar odio.</p>
+            <button class="button_primary-xl">Learn More</button>
           </div>
         </div>
-      </section>
-      <section class="clients">
-        <div class="container">
-          <h2>Our Clients</h2>
-          <p>We have been working with some Fortune 500+ clients</p>
-          <div class="clients__logos">
-            <img src="img/clients-logo-1.svg" alt="" />
-            <img src="img/clients-logo-2.svg" alt="" />
-            <img src="img/clients-logo-3.svg" alt="" />
-            <img src="img/clients-logo-4.svg" alt="" />
-            <img src="img/clients-logo-5.svg" alt="" />
-            <img src="img/clients-logo-6.svg" alt="" />
+      </div>
+    </section>
+    <section class="achievements">
+      <div class="container">
+        <div class="achievements__content">
+          <div class="achievements__content-header">
+            <h2>Helping a local<br><span>business reinvent itself</span></h2>
+            <p>We reached here with our hard work and dedication</p>
           </div>
-        </div>
-      </section>
-      <section class="manage">
-        <div class="container">
-          <h2>Manage your entire community<br> in a single system</h2>
-          <p class="manage__subtitle">Who is Nextcent suitable for?</p>
-          <div class="manage__cards">
-            <div class="manage__card">
-              <div class="manage__card-icon">
-                <img src="img/manage-1.svg">
+          <div class="achievements__content-group">
+            <div class="achievements__item">
+              <img src="img/members.svg">
+              <div class="achievement__item-text">
+                <h3>2,245,341</h3>
+                <p>Members</p>
               </div>
-              <h4>Membership Organisations</h4>
-              <p>Our membership management software provides full automation of membership renewals and payments</p>
             </div>
-            <div class="manage__card">
-              <div class="manage__card-icon">
-                <img src="img/manage-2.svg">
+            <div class="achievements__item">
+              <img src="img/clubs.svg">
+              <div class="achievement__item-text">
+                <h3>46,328</h3>
+                <p>Clubs</p>
               </div>
-              <h4>National Associations</h4>
-              <p>Our membership management software provides full automation of membership renewals and payments</p>
             </div>
-            <div class="manage__card">
-              <div class="manage__card-icon">
-                <img src="img/manage-3.svg">
+            <div class="achievements__item">
+              <img src="img/event_bookings.svg">
+              <div class="achievement__item-text">
+                <h3>828,867</h3>
+                <p>Event Bookings</p>
               </div>
-              <h4>Clubs & Groups</h4>
-              <p>Our membership management software provides full automation of membership renewals and payments</p>
             </div>
-            
-          </div>
-        </div>
-      </section>
-      <section class="unlock">
-        <div class="container">
-          <div class="unlock__content">
-            <img src="img/unlock.svg"/>
-            <div class="unlock__group">
-              <h2>The unseen of spending three years at Pixelgrade</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
-              <button class="button_primary-xl">Learn More</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="achievements">
-        <div class="container">
-          <div class="achievements__content">
-            <div class="achievements__content-header">
-              <h2>Helping a local<br><span>business reinvent itself</span></h2>
-              <p>We reached here with our hard work and dedication</p>
-            </div>
-            <div class="achievements__content-group">
-              <div class="achievements__item">
-                <img src="img/members.svg">
-                <div class="achievement__item-text">
-                  <h3>2,245,341</h3>
-                  <p>Members</p>
-                </div>
-              </div>
-              <div class="achievements__item">
-                <img src="img/clubs.svg">
-                <div class="achievement__item-text">
-                  <h3>46,328</h3>
-                  <p>Clubs</p>
-                </div>
-              </div>
-              <div class="achievements__item">
-                <img src="img/event_bookings.svg">
-                <div class="achievement__item-text">
-                  <h3>828,867</h3>
-                  <p>Event Bookings</p>
-                </div>
-              </div>
-              <div class="achievements__item">
-                <img src="img/payments.svg">
-                <div class="achievement__item-text">
-                  <h3>1,926,436</h3>
-                  <p>Payments</p>
-                </div>
+            <div class="achievements__item">
+              <img src="img/payments.svg">
+              <div class="achievement__item-text">
+                <h3>1,926,436</h3>
+                <p>Payments</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+    <section class="customer">
+      <div class="container">
+        <div class="customer__content">
+          <img src="img/customer.png">
+          <div class="customer__text">
+            <p>Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus
+              tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim.
+              Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi
+              blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget
+              lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque vulputate odio neque, eget efficitur
+              libero condimentum id.</p>
+            <div class="customer__text-info">
+              <h4>Tim Smith</h4>
+              <p>British Dragon Boat Racing Association</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="container">
+        <h2>Lessons and insights <span>from 8 years</span></h2>
+        <button class="button_primary-xl">
+          Get a Demo
+          <img src="img/arrow-right.svg">
+        </button>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
