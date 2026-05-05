@@ -11,9 +11,12 @@
   align-items: center;
   gap: 37px;
 
-  @media (max-width: $breakpoint-lg) {
-    img {
+  img {
+    @media (max-width: $breakpoint-lg) {
       width: 280px;
+    }
+    @media (max-width: $breakpoint-sm) {
+      width: 100%;
     }
   }
 

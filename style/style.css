@@ -37,6 +37,7 @@ body {
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
+    padding: 0 12px;
   }
 }
 
@@ -198,44 +199,112 @@ a {
   }
 }
 
-.desktop-navigation {
+.desktop-navigation, .mobile-navigation {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 0 0 35px rgba(171, 190, 209, 0.2);
+}
+
+.desktop-navigation__wrap {
   padding: 22px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 @media (max-width: 992px) {
-  .desktop-navigation {
+  .desktop-navigation__wrap {
     display: none;
   }
 }
 
-.desktop-navigation__list {
+.navigation__list {
   display: flex;
   gap: 50px;
 }
 @media (max-width: 1230px) {
-  .desktop-navigation__list {
+  .navigation__list {
     gap: 30px;
   }
 }
 
-.desktop-navigation__buttons {
+.navigation__buttons {
   display: flex;
   gap: 14px;
 }
 
-.desktop-navigation__list-element_active {
+.navigation__list-element_active {
   font-weight: 500;
+}
+
+.mobile-navigation {
+  display: none;
+}
+@media (max-width: 992px) {
+  .mobile-navigation {
+    display: block;
+  }
+}
+.mobile-navigation .icon_menu-open {
+  display: block;
+}
+.mobile-navigation .icon_menu-close {
+  display: none;
+}
+.mobile-navigation .mobile-navigation__wrap {
+  background: #fff;
+}
+.mobile-navigation.opened {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.mobile-navigation.opened .mobile-navigation__wrap {
+  border-radius: 0 0 8px 8px;
+}
+.mobile-navigation.opened .icon_menu-open {
+  display: none;
+}
+.mobile-navigation.opened .icon_menu-close {
+  display: block;
+}
+.mobile-navigation.opened .mobile-navigation__header {
+  padding: 14px 0;
+}
+.mobile-navigation.opened .mobile-navigation__content {
+  display: block;
+}
+.mobile-navigation .mobile-navigation__content {
+  display: none;
+  padding-bottom: 10px 0 32px;
+}
+.mobile-navigation .mobile-navigation__content .navigation__list {
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.mobile-navigation .mobile-navigation__content .navigation__buttons {
+  flex-direction: column;
+  padding-bottom: 32px;
+}
+.mobile-navigation .mobile-navigation__content .navigation__buttons button {
+  padding: 16px 20px;
+}
+
+.mobile-navigation__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .promo {
   background: #F5F7FA;
-  padding: 96px 0;
+  padding: 180px 0 96px;
 }
 @media (max-width: 768px) {
   .promo {
-    padding: 60px 0;
+    padding: 121px 0 60px;
   }
 }
 
@@ -255,6 +324,11 @@ a {
 @media (max-width: 768px) {
   .promo__content {
     flex-direction: column-reverse;
+  }
+}
+@media (max-width: 576px) {
+  .promo__content img {
+    width: 100%;
   }
 }
 
@@ -301,6 +375,11 @@ a {
     width: 400px;
     margin: 0 auto;
     gap: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .manage__cards {
+    width: 100%;
   }
 }
 
@@ -370,6 +449,11 @@ a {
     width: 280px;
   }
 }
+@media (max-width: 576px) {
+  .unlock__content img {
+    width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .unlock__content {
     flex-direction: column;
@@ -422,6 +506,11 @@ a {
     gap: 40px;
   }
 }
+@media (max-width: 576px) {
+  .achievements__content {
+    align-items: normal;
+  }
+}
 
 .achievements__content-header p {
   color: #18191F;
@@ -429,6 +518,11 @@ a {
 @media (max-width: 992px) {
   .achievements__content-header {
     text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .achievements__content-header {
+    text-align: left;
   }
 }
 
@@ -444,6 +538,13 @@ a {
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 60px;
          column-gap: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .achievements__content-group {
+    grid-template-columns: 100%;
+    -moz-column-gap: 0;
+         column-gap: 0;
   }
 }
 
@@ -469,6 +570,12 @@ a {
 .customer__content img {
   border-radius: 8px;
   height: 100%;
+}
+@media (max-width: 576px) {
+  .customer__content img {
+    height: auto;
+    width: 100%;
+  }
 }
 @media (max-width: 992px) {
   .customer__content {
@@ -592,6 +699,11 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
+}
+@media (max-width: 576px) {
+  .footer__form {
+    width: 100%;
+  }
 }
 .footer__form label {
   width: 100%;

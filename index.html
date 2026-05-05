@@ -15,35 +15,76 @@
 
 <body>
   <header>
-    <div class="container">
-      <nav class="desktop-navigation">
-        <img src="img/logo.svg" alt="Nexcent" />
-        <ul class="desktop-navigation__list">
-          <li class="desktop-navigation__list-element_active">
-            <a href="">Home</a>
-          </li>
-          <li>
-            <a href="">Service</a>
-          </li>
-          <li>
-            <a href="">Feature</a>
-          </li>
-          <li>
-            <a href="">Product</a>
-          </li>
-          <li>
-            <a href="">Testimonial</a>
-          </li>
-          <li>
-            <a href="">FAQ</a>
-          </li>
-        </ul>
-        <div class="desktop-navigation__buttons">
-          <button class="button_light-sm">Login</button>
-          <button class="button_primary-sm">Sign up</button>
+    <nav class="desktop-navigation">
+      <div class="container">
+        <div class="desktop-navigation__wrap">
+          <img src="img/logo.svg" alt="Nexcent" />
+          <ul class="navigation__list">
+            <li class="navigation__list-element_active">
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Service</a>
+            </li>
+            <li>
+              <a href="">Feature</a>
+            </li>
+            <li>
+              <a href="">Product</a>
+            </li>
+            <li>
+              <a href="">Testimonial</a>
+            </li>
+            <li>
+              <a href="">FAQ</a>
+            </li>
+          </ul>
+          <div class="navigation__buttons">
+            <button class="button_light-sm">Login</button>
+            <button class="button_primary-sm">Sign up</button>
+          </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
+    <nav class="mobile-navigation">
+      <div class="mobile-navigation__wrap">
+        <div class="container">
+          <div class="mobile-navigation__header">
+            <img src="img/logo-sm.svg">
+            <button class="mobile-navigation__header-button">
+              <img src="img/menu-open.svg" class="icon_menu-open">
+              <img src="img/menu-close.svg" class="icon_menu-close">
+            </button>
+          </div>
+          <div class="mobile-navigation__content">
+            <ul class="navigation__list">
+              <li class="navigation__list-element_active">
+                <a href="">Home</a>
+              </li>
+              <li>
+                <a href="">Service</a>
+              </li>
+              <li>
+                <a href="">Feature</a>
+              </li>
+              <li>
+                <a href="">Product</a>
+              </li>
+              <li>
+                <a href="">Testimonial</a>
+              </li>
+              <li>
+                <a href="">FAQ</a>
+              </li>
+            </ul>
+            <div class="navigation__buttons">
+              <button class="button_light-sm">Login</button>
+              <button class="button_primary-sm">Sign up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
   <main>
     <section class="promo">
@@ -237,6 +278,7 @@
       </div>
     </div>
   </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>

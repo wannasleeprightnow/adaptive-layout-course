@@ -77,6 +77,10 @@
   justify-content: space-between;
   gap: 8px;
 
+  @media (max-width: $breakpoint-sm) {
+    width: 100%;
+  }
+
   label {
     width: 100%;
   }

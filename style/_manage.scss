@@ -30,6 +30,10 @@
     margin: 0 auto;
     gap: 16px
   }
+
+  @media (max-width: $breakpoint-sm) {
+    width: 100%;
+  }
 }
 
 .manage__card {

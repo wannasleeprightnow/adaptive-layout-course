@@ -21,6 +21,10 @@
     flex-direction: column;
     gap: 40px;
   }
+
+  @media (max-width: $breakpoint-sm) {
+    align-items: normal;
+  }
 }
 
 .achievements__content-header {
@@ -30,6 +34,10 @@
 
   @media (max-width: $breakpoint-lg) {
     text-align: center;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    text-align: left;
   }
 }
 
@@ -42,6 +50,11 @@
   @media (max-width: $breakpoint-lg) {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    grid-template-columns: 100%;
+    column-gap: 0;
   }
 }
 
